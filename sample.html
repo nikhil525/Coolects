@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="Format/CSS/Stylenew.css?v=1.0">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css?v=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+   <!--<header>
+  	<h2>
+  		Thi is header
+  	</h2>
+  </header>
+  <nav>
+  <ul>
+  <li>Home</li>
+  <li>About us</li>
+  <li>Career</li>
+  <li>Products</li>
+  <li>Contact us</li>
+  </ul>
+  </nav> 
+  <div class="containermain">
+s
+  </div>
+  <h3>Div layout</h3>
+  <div id="main" class="containerflex">
+  	<div class="flex-item">hellloo</div>
+  	<div class="flex-item">hiii</div>
+  	<div class="flex-item">howwwwww</div>
+  </div>-->
+
+<div class="containercontent base_width" id="SITE_ROOT">
+	<div id="SITE_STRUCTURE" class="sitestructure base_width">
+		<div class="header base_width">
+			<div class="row">
+				<div >
+					Logo
+				</div>
+				<div class="menuicon">
+					<a href="javascript:void(0);" style="font-size:15px;" onclick="expandMenu()">☰</a>
+				</div>
+					<div id="navcontainer" class="collapselinks">
+						<div class="navigation-links">
+							<a class="navigation-link">
+								Home					
+							</a>
+							<a class="navigation-link">
+								About Us				
+							</a>
+							<a class="navigation-link">
+								Contact Us				
+							</a>
+							<a class="navigation-link">
+								Services				
+							</a>
+							<a class="navigation-link">
+								Solutions				
+							</a>
+							<a class="navigation-link">
+								Careers				
+							</a>
+						</div>
+				</div>				
+			</div>
+		</div>
+		<div class="maincontent base_width">
+			<div class="homecontent base_width">			  
+			  <div class="homepagecontainer base_width">
+				
+			  </div>
+			</div>
+		</div>
+	</div>
+  </div>
+  <script>
+		function expandMenu() {
+		    var x = document.getElementById("navcontainer");
+		    if (x.className === "blockdisplay") {
+		        x.className += " nonedisplay";
+		    } else {
+		        x.className = "blockdisplay";
+		    }
+		}
+	</script>
+
+  <script src="bootstrap/js/jquery-1.12.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+$tablet-width: 980px;
+$desktop-width: 1024px;
+$tab-width: 768px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+  @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+  @content;
+  }
+}
+
+@mixin tabnav {
+  @media (max-width: #{$tab-width}) {
+  @content;
+  }
+}
+
+.base_width {
+  @include tablet {
+  width:980px;
+  }  
+  width:100%; 
+}
+
+.homecontent {
+  top:0px;
+  height:558px;
+  position:absolute;  
+  left:0px;
+}
+
+#main p {
+  color: #00ff00;
+  width: 97%;
+  height:100%;
+  .redbox {
+    background-color: #ff0000;
+    color: #000000;
+  }
+}
+
+$containerwidth: 1024px;
+
+.sitestructure {
+  top:0px;  
+  position:static;
+  height:2699px;
+}
+
+.containercontent {
+    min-height: 100%;
+    position: relative;
+    margin: 0 auto;    
+    padding-bottom: 41px;
+}
+
+$headerheight: 50px;
+.header {
+  top: 0px;  
+  height: 66px;
+  position: fixed;
+  z-index: 50; 
+  left: auto;
+  background-color:white;
+  padding-left:30px;
+  padding-right:30px;
+}
+
+.navigation-main {
+  top: 20px;  
+  position: absolute;
+  height: 27px;
+}
+
+.navigation-links {
+  display: inline-block;
+  text-align: center;
+  overflow: visible;
+  height: 27px;
+  @include tabnav {
+  float:right;
+  } 
+}
+
+.collapselinks {
+@include tabnav {
+    display:none;
+  }  
+  display:block;
+  }
+
+.blockdisplay {
+  display:block;
+}
+
+.nonedisplay {
+  display:none;
+}
+
+.menuicon {
+  @include tabnav {
+    display:block;
+  }  
+  display:none;
+  float:right;
+}
+
+
+
+.navigation-link {
+  display: inherit;
+  color: grey;  
+  height: 27px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: visible;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+#navcontainer
+{
+  float:right;
+}
+
+.maincontent {
+  top: 66px;
+  height: 2470px;
+  position: absolute;
+  left: 0px;
+}
+
+
+
+.homebackgroundclipper {
+  position:absolute;
+  top:0px;
+  width:1903px;
+  height:558px;
+  left:-462px;
+  overflow:hidden;
+  clip:rect(0px 1903px 558px -462px);
+  back:rgb(39, 59, 123);
+}
+
+.homebackgroundcontainer {
+  position:fixed;
+  transform: translate3d(0px, 0px, 0px);
+  width:1903px;
+  left:0px;
+  height:558px;
+}
+
+.homebackground {
+  position: absolute;
+  width: 100%;
+  opacity: 0.7;
+  height: 997px;
+  background-image: url('https://static.wixstatic.com/media/05e3dc_d76e10ffc7334f30944ded411e5c7418.jpg/v1/fill/w_1903,h_997,al_t,q_85,usm_0.66_1.00_0.01/05e3dc_d76e10ffc7334f30944ded411e5c7418.jpg');
+  background-size: cover;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+
+.homepagecontainer {
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  bottom: 0;
+  left: 0;
+  bottom:0px;
+}
+
+$footerheight: 100px;
+.footer {
+  width: $containerwidth;
+  height: $footerheight;
+}
+
+
+

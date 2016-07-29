@@ -1,0 +1,6 @@
+1) install node.js (installs node and npm)
+  http://ryanchristiani.com/getting-started-with-gulp-and-sass/
+2) go to project folder run 'npm init' to set up package.json file
+3) install gulp
+4) install gulp-sass 
+5) create Gulpfile.js (add gulp tasks to run and compile scss to css)

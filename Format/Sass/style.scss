@@ -1,0 +1,148 @@
+#main p {
+  color: #00ff00;
+  width: 97%;
+  height:100%;
+  .redbox {
+    background-color: #ff0000;
+    color: #000000;
+  }
+}
+
+.containermain {
+  width: 100%;
+}
+
+$containerwidth: 1024px;
+.containercontent {
+ min-height:100%;
+ position:relative;
+ margin:0 auto;
+ width:980px;
+ padding-bottom:41px;
+}
+
+.sitestructure {
+  top:0px;
+  width:980px;
+  position:static;
+  height:2699px;
+}
+
+
+$headerheight: 50px;
+.header {
+  top: 0px;
+  width: 980px;
+  height: 66px;
+  position: fixed;
+  z-index: 50; 
+  left: auto;
+  background-color:white;
+}
+
+.navigation-main {
+  top: 20px;
+  left: 310px;
+  width: 660px;
+  position: absolute;
+  height: 27px;
+}
+
+.navigation-links {
+  display: inline-block;
+  text-align: center;
+  overflow: visible;
+  height: 27px;
+}
+
+.navigation-link {
+  display: inherit;
+  color: grey;
+  width: 92px;
+  height: 27px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.maincontent {
+  top: 66px;
+  width: 980px;
+  height: 2470px;
+  position: absolute;
+  left: 0px;
+}
+
+.homecontent {
+  top:0px;
+  height:558px;
+  position:absolute;
+  width:980px;
+  left:0px;
+}
+
+.homebackgroundclipper {
+  position:absolute;
+  top:0px;
+  width:1903px;
+  height:558px;
+  left:-462px;
+  overflow:hidden;
+  clip:rect(0px 1903px 558px -462px);
+  back:rgb(39, 59, 123);
+}
+
+.homebackgroundcontainer {
+  position:fixed;
+  transform: translate3d(0px, 0px, 0px);
+  width:1903px;
+  left:0px;
+  height:558px;
+}
+
+.homebackground {
+  position: absolute;
+  width: 100%;
+  opacity: 0.7;
+  height: 997px;
+  background-image: url('https://static.wixstatic.com/media/05e3dc_d76e10ffc7334f30944ded411e5c7418.jpg/v1/fill/w_1903,h_997,al_t,q_85,usm_0.66_1.00_0.01/05e3dc_d76e10ffc7334f30944ded411e5c7418.jpg');
+  background-size: cover;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+
+.homepagecontainer {
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  bottom: 0;
+  left: 0;
+}
+
+$footerheight: 100px;
+.footer {
+  width: $containerwidth;
+  height: $footerheight;
+}
+
+.containerflex {
+  width:100%;
+  position:relative;
+  display:flex;
+  justify-content:space-around;
+  .flex-item {
+  background: tomato;
+  padding: 5px;
+  width: auto;
+  height: 150px;
+  margin-top: 10px;
+  
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  order:1;
+}
+}
+
