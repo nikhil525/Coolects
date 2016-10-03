@@ -1,13 +1,27 @@
 .base_width {
   width: 100%; }
+
+.basecontent_width {
+  width: 100%; }
   @media (min-width: 980px) {
-    .base_width {
+    .basecontent_width {
       width: 980px; } }
+
+.inlinetoblock {
+  display: inline; }
+  @media (max-width: 768px) {
+    .inlinetoblock {
+      display: block; } }
 
 .homecontent {
   top: 0px;
   height: 558px;
   position: absolute;
+  left: 0px; }
+
+.detailscontent {
+  top: 0px;
+  height: 558px;
   left: 0px; }
 
 #main p {
@@ -32,12 +46,14 @@
 .header {
   top: 0px;
   height: 66px;
-  position: fixed;
+  position: relative;
   z-index: 50;
   left: auto;
   background-color: white;
   padding-left: 30px;
-  padding-right: 30px; }
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .navigation-main {
   top: 20px;
@@ -54,23 +70,35 @@
       float: right; } }
 
 .collapselinks {
-  display: block; }
+  display: block;
+  position: absolute;
+  float: right;
+  right: 0;
+  top: 30px; }
   @media (max-width: 768px) {
     .collapselinks {
-      display: none; } }
+      display: none;
+      position: absolute;
+      float: right;
+      right: 0;
+      top: 50px; } }
 
 .blockdisplay {
   display: block; }
 
-.nonedisplay {
-  display: none; }
+@media (max-width: 768px) {
+  .nonedisplay {
+    display: none; } }
 
 .menuicon {
   display: none;
   float: right; }
   @media (max-width: 768px) {
     .menuicon {
-      display: block; } }
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 30px; } }
 
 .navigation-link {
   display: inherit;
@@ -81,6 +109,9 @@
   overflow: visible;
   padding-left: 15px;
   padding-right: 15px; }
+  @media (max-width: 768px) {
+    .navigation-link {
+      text-align: right; } }
 
 #navcontainer {
   float: right; }
@@ -129,3 +160,15 @@
 .footer {
   width: 1024px;
   height: 100px; }
+
+.headerstyle.headingarrow {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #252525;
+  left: 50%;
+  margin-left: -20px;
+  bottom: -20px; }

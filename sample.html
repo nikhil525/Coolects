@@ -45,14 +45,14 @@ s
 	<div id="SITE_STRUCTURE" class="sitestructure base_width">
 		<div class="header base_width">
 			<div class="row">
-				<div >
-					Logo
+				<div style="width:300px;float:left;">
+					<img src="format/img/logo.png" alt="logo"/>
 				</div>
 				<div class="menuicon">
 					<a href="javascript:void(0);" style="font-size:15px;" onclick="expandMenu()">☰</a>
 				</div>
 					<div id="navcontainer" class="collapselinks">
-						<div class="navigation-links">
+						<div class="navigation-links">				
 							<a class="navigation-link">
 								Home					
 							</a>
@@ -75,28 +75,43 @@ s
 				</div>				
 			</div>
 		</div>
+		<div class="header base_width">
+		<div class="headerstyle headingarrow">
+
+				 </div>
+				 </div>
+				 
 		<div class="maincontent base_width">
 			<div class="homecontent base_width">			  
 			  <div class="homepagecontainer base_width">
-				
+				 Helloooooooo................
+				 <div class="headerstyle headingarrow">
+
+				 </div>
 			  </div>
 			</div>
 		</div>
 	</div>
   </div>
-  <script>
-		function expandMenu() {
-		    var x = document.getElementById("navcontainer");
-		    if (x.className === "blockdisplay") {
-		        x.className += " nonedisplay";
-		    } else {
-		        x.className = "blockdisplay";
-		    }
-		}
-	</script>
-
   <script src="bootstrap/js/jquery-1.12.1.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script>
+		function expandMenu() {
+		    var x = document.getElementById("navcontainer");	    
+		    if (x.className === "collapselinks blockdisplay") { 	
+		        x.className = "collapselinks nonedisplay";		        
+		    } else {
+		        x.className = "collapselinks blockdisplay";
+		    }
+		}
+		$(window).resize(function(){
+  				var w = $(window).width();
+  				var x = document.getElementById("navcontainer");
+  				if(w > 768 && x.className !== "collapselinks" ) {
+		    		x.className = "collapselinks";
+  				}
+		});
+	</script>
 </body>
 </html>

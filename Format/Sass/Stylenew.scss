@@ -20,17 +20,34 @@ $tab-width: 768px;
   }
 }
 
-.base_width {
+.base_width {  
+  width:100%; 
+}
+
+.basecontent_width {
   @include tablet {
   width:980px;
   }  
   width:100%; 
 }
 
+.inlinetoblock {
+  @include tabnav {
+  display:block;
+  }  
+  display:inline; 
+}
+
 .homecontent {
   top:0px;
   height:558px;
   position:absolute;  
+  left:0px;
+}
+
+.detailscontent {
+  top:0px;
+  height:558px; 
   left:0px;
 }
 
@@ -63,12 +80,14 @@ $headerheight: 50px;
 .header {
   top: 0px;  
   height: 66px;
-  position: fixed;
+  position: relative;
   z-index: 50; 
   left: auto;
   background-color:white;
   padding-left:30px;
   padding-right:30px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .navigation-main {
@@ -90,8 +109,16 @@ $headerheight: 50px;
 .collapselinks {
 @include tabnav {
     display:none;
+    position: absolute;
+    float: right;
+    right: 0;
+    top:50px;
   }  
   display:block;
+  position:absolute;
+  float:right;
+  right:0;
+  top:30px;
   }
 
 .blockdisplay {
@@ -99,12 +126,17 @@ $headerheight: 50px;
 }
 
 .nonedisplay {
+@include tabnav {
   display:none;
+  }
 }
 
 .menuicon {
   @include tabnav {
     display:block;
+    position: absolute;
+    right: 10px;
+    top: 30px;
   }  
   display:none;
   float:right;
@@ -121,6 +153,9 @@ $headerheight: 50px;
   overflow: visible;
   padding-left:15px;
   padding-right:15px;
+  @include tabnav {
+  text-align:right;
+  }
 }
 
 #navcontainer
@@ -180,6 +215,19 @@ $footerheight: 100px;
 .footer {
   width: $containerwidth;
   height: $footerheight;
+}
+
+.headerstyle.headingarrow {
+  content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #252525;
+    left: 50%;
+    margin-left: -20px;
+    bottom: -20px;
 }
 
 

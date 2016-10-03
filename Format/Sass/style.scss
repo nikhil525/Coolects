@@ -144,5 +144,18 @@ $footerheight: 100px;
   text-align: center;
   order:1;
 }
+
+.headerstyle.headingarrow {
+  content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #252525;
+    left: 50%;
+    margin-left: -20px;
+    bottom: -20px;
+}
 }
 
