@@ -1,0 +1,136 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="Format/CSS/Stylenew.css?v=1.0">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css?v=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+   <!--<header>
+  	<h2>
+  		Thi is header
+  	</h2>
+  </header>
+  <nav>
+  <ul>
+  <li>Home</li>
+  <li>About us</li>
+  <li>Career</li>
+  <li>Products</li>
+  <li>Contact us</li>
+  </ul>
+  </nav> 
+  <div class="containermain">
+s
+  </div>
+  <h3>Div layout</h3>
+  <div id="main" class="containerflex">
+  	<div class="flex-item">hellloo</div>
+  	<div class="flex-item">hiii</div>
+  	<div class="flex-item">howwwwww</div>
+  </div>-->
+
+<div class="containercontent base_width" id="SITE_ROOT">
+	<div id="SITE_STRUCTURE" class="base_width">
+	<div style="position:fixed;z-index:1;width:100%;background-color:white;">
+		<div class="header basecontent_width">
+			<div class="row">
+				<div style="width:300px;float:left;">
+					<img src="format/img/logo.png" alt="logo"/>
+				</div>
+				<div class="menuicon">
+					<a href="javascript:void(0);" style="font-size:15px;" onclick="expandMenu()">☰</a>
+				</div>
+					<div id="navcontainer" class="collapselinks" >
+						<div class="navigation-links">			<div class="inlinetoblock">	
+							<a class="navigation-link">
+								Home					
+							</a>
+							<div style="position:absolute;visibility:hidden;">
+							   sub menu
+							</div>
+							<a class="navigation-link">
+								Services				
+							</a>
+							<a class="navigation-link">
+								Solutions				
+							</a>
+							<a class="navigation-link">
+								Methodologies				
+							</a>
+							<a class="navigation-link">
+								Careers				
+							</a>
+							<a class="navigation-link">
+								Contact				
+							</a>
+						</div>
+				</div>				
+			</div>
+		</div>		
+	</div>		 
+		<div class="base_width" style="padding-top:66px;">
+		   <div style="height:250px;background-color:#252525;position:relative;text-align:center;">
+		     <h1 style="color:white;font-size:50px;padding-top:90px;">ERP <span style="color:#179BD7;">Solutions</span></h1>
+		   	 <div class="headerstyle headingarrow">
+
+				 </div>
+		   </div>
+			<div style="padding:40px;position:relative;margin-right:auto;margin-left:auto;" class="detailscontent basecontent_width">			  <p>
+				At SLRI Solutions,we simplify most complex of ideas, tasks and present them to our clients in an easy-to-understand and manageable manner. Our advanced ERP solutions will help you to streamline your business’s operations by:
+			</p>
+			<ul>
+				<li>
+				Lowering ongoing IT costs; and</li>
+<li>Managing complex business requirements.</li>
+<li>Improving workforce productivity by increasing data access;</li>
+<li>Providing more real-time data that can be used to make smart and fast decisions;
+				</li>
+			</ul>
+			  <p>
+			  	Our Cloud ERP is often the best choice for businesses in a fast-paced work environment that are looking for an affordable solution; our  consultants have expertise and helping clients  to choose right ERP solutions for their business.
+			  </p>
+			  <p>Some of Cloud ERP System Services we offer</p>
+			  <ul>
+			  <li>Workday </li>
+			  <li>Sucessfactors</li>
+			  <li>SAAS</li>
+			  </ul>
+
+			</div>
+		</div>
+	</div>
+  </div>
+  <script src="bootstrap/js/jquery-1.12.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script>
+		function expandMenu() {
+		    var x = document.getElementById("navcontainer");	    
+		    if (x.className === "collapselinks blockdisplay") { 	
+		        x.className = "collapselinks nonedisplay";		        
+		    } else {
+		        x.className = "collapselinks blockdisplay";
+		    }
+		}
+		$(window).resize(function(){
+  				var w = $(window).width();
+  				var x = document.getElementById("navcontainer");
+  				if(w > 768 && x.className !== "collapselinks" ) {
+		    		x.className = "collapselinks";
+  				}
+		});
+	</script>
+</body>
+</html>
