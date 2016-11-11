@@ -1,0 +1,109 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="Format/CSS/Stylenew.css?v=1.0">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css?v=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body onload="add_header();">
+<div class="containercontent base_width" id="SITE_ROOT">
+	<div id="SITE_STRUCTURE" class="base_width">
+    	<div style="position:fixed;z-index:1;width:100%;background-color:white;">
+      		<div id="header" class="header basecontent_width">      					
+      		</div>	
+    	</div>	 
+    	<div class="base_width" style="padding-top:66px;">
+    		   <div style="height:250px;background-color:#252525;position:relative;text-align:center;">
+    		     
+    		   </div>
+    			<div style="padding:40px;position:relative;margin-right:auto;margin-left:auto;" class="detailscontent basecontent_width">	
+              <div id ="services" style="width:100%;display:table;">    
+                <div style="width:60%;float:left;">
+                  <span class="span20"><span style="Color:Orange;"">Who </span>we are</span>
+                  <p>
+                  SLRI Solutions, LLC (DBA - 'SLRIS') is an IT services company providing software development and consulting solutions in virtually all aspects of Business ranging from Application Development to Networking and e-Business operations. We specialize in successful implementations, support, upgrades, and enhancements of IT systems. With more than a decade’s worth of experience in the industry, we have gained the expertise that even the most complex of IT problems demand. We are well versed and trained in a vast number of IT services, and can also offer effective consulting services for your business as well. From IT governance to implementation to support strategy, we are ready to do it all so that you don’t have to.
+
+                  </p>
+                </div>
+                <div style="width:40%;float:left;">
+                  <img src="format/img/services.png" width="100%" alt="img"/>
+                </div>                
+              </div>
+              <div id="solutions" style="width:100%;padding-top:30px;">
+                <div style="text-align:center;float:left;width:33%;padding:20px;">
+                <img src="format/img/erp.png" width="45%" alt="img"/>
+                <p>
+                  ERP is a management tool that is designed to integrate all departments across a business into a single computer management system. 
+                </p>
+                <p>
+                At SLRI Solutions, we simplify even the most complex of ideas and tasks and present them to you in an easy-to-understand and management manner.
+                </p>
+                </div>
+                <div style="float:left;width:33%;text-align:center;padding:20px;">
+                <img src="format/img/erp.png" width="45%" alt="img"/>
+                <p>
+                  Gone are the days when computer software connected different department across a single business; today, that information can be shared in the cloud.
+                </p>
+                <p>Using Cloud solutions can make a business more effective, organized, and productive. 
+                </p>
+                </div>
+                <div style="text-align:center;float:left;width:33%;padding:20px;">
+                <img src="format/img/erp.png" width="45%" alt="img"/>
+                <p>
+                  Nearly all business types will rely on some sort of web services – web-based enterprise applications that are used to exchange data – in order to function efficiently.
+                </p>
+                <p>At SLRI Solutions, we are experts in a variety of web services, and specialize in the following
+                </p>
+                </div>
+
+              </div>
+    			</div>
+    	</div>
+	</div>
+  </div>
+  
+  <script src="bootstrap/js/jquery-1.12.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script>
+		function expandMenu() {
+		    var x = document.getElementById("navcontainer");	    
+		    if (x.className === "collapselinks blockdisplay") { 	
+		        x.className = "collapselinks nonedisplay";		        
+		    } else {
+		        x.className = "collapselinks blockdisplay";
+		    }
+		}
+		$(window).resize(function(){
+  				var w = $(window).width();
+  				var x = document.getElementById("navcontainer");
+  				if(w > 768 && x.className !== "collapselinks" ) {
+		    		x.className = "collapselinks";
+  				}
+		});
+	</script>
+	<script type="text/javascript" 
+      defer="defer" 
+      src="Format/JS/set_Output.js"></script>
+<script type="text/javascript" 
+      defer="defer" 
+      src="Format/JS/IO.js"></script>
+<script type="text/javascript" 
+      defer="defer" 
+      src="Format/JS/add_Footer.js"></script>
+<script type="text/javascript" 
+      defer="defer" 
+      src="Format/JS/add_Header.js"></script>
+</body>
+</html>

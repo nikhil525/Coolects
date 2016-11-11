@@ -1,0 +1,35 @@
+			<div class="row">
+				<div style="width:300px;float:left;">
+					<img src="format/img/logo.png" alt="logo"/>
+				</div>
+				<div class="menuicon">
+					<a href="javascript:void(0);" style="font-size:15px;" onclick="expandMenu()">☰</a>
+				</div>
+				<div id="navcontainer" class="collapselinks" >
+					<div class="navigation-links">			
+						<div class="inlinetoblock">	
+							<a class="navigation-link">
+								Home					
+							</a>
+							<div style="position:absolute;visibility:hidden;">
+							   sub menu
+							</div>
+							<a class="navigation-link">
+								Services				
+							</a>
+							<a class="navigation-link">
+								Solutions				
+							</a>
+							<a class="navigation-link">
+								Methodologies				
+							</a>
+							<a class="navigation-link">
+								Careers				
+							</a>
+							<a class="navigation-link">
+								Contact				
+							</a>
+						</div>
+					</div>				
+				</div>
+			</div>	

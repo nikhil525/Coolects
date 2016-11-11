@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
   <title>The HTML5 Herald</title>
   <meta name="description" content="The HTML5 Herald">
@@ -16,7 +16,7 @@
   <![endif]-->
 </head>
 
-<body>
+<body onload="add_header();">
    <!--<header>
   	<h2>
   		Thi is header
@@ -44,42 +44,10 @@ s
 <div class="containercontent base_width" id="SITE_ROOT">
 	<div id="SITE_STRUCTURE" class="base_width">
 	<div style="position:fixed;z-index:1;width:100%;background-color:white;">
-		<div class="header basecontent_width">
-			<div class="row">
-				<div style="width:300px;float:left;">
-					<img src="format/img/logo.png" alt="logo"/>
-				</div>
-				<div class="menuicon">
-					<a href="javascript:void(0);" style="font-size:15px;" onclick="expandMenu()">☰</a>
-				</div>
-					<div id="navcontainer" class="collapselinks" >
-						<div class="navigation-links">			<div class="inlinetoblock">	
-							<a class="navigation-link">
-								Home					
-							</a>
-							<div style="position:absolute;visibility:hidden;">
-							   sub menu
-							</div>
-							<a class="navigation-link">
-								Services				
-							</a>
-							<a class="navigation-link">
-								Solutions				
-							</a>
-							<a class="navigation-link">
-								Methodologies				
-							</a>
-							<a class="navigation-link">
-								Careers				
-							</a>
-							<a class="navigation-link">
-								Contact				
-							</a>
-						</div>
-				</div>				
-			</div>
-		</div>		
-	</div>		 
+		<div id="header" class="header basecontent_width">
+					
+		</div>	
+		</div>	 
 		<div class="base_width" style="padding-top:66px;">
 		   <div style="height:250px;background-color:#252525;position:relative;text-align:center;">
 		     <h1 style="color:white;font-size:50px;padding-top:90px;">ERP <span style="color:#179BD7;">Solutions</span></h1>
@@ -112,6 +80,7 @@ s
 		</div>
 	</div>
   </div>
+  </div>
   <script src="bootstrap/js/jquery-1.12.1.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
@@ -132,5 +101,17 @@ s
   				}
 		});
 	</script>
+	<script type="text/javascript" 
+      defer="defer" 
+      src="Format/JS/set_Output.js"></script>
+<script type="text/javascript" 
+      defer="defer" 
+      src="Format/JS/IO.js"></script>
+<script type="text/javascript" 
+      defer="defer" 
+      src="Format/JS/add_Footer.js"></script>
+<script type="text/javascript" 
+      defer="defer" 
+      src="Format/JS/add_Header.js"></script>
 </body>
 </html>
